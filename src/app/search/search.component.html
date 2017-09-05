@@ -1,0 +1,14 @@
+<div>
+  <div><img src="{{profile_picture}}" /></div>
+  <div><h3>Welcome {{full_name}}</h3></div>
+
+  <div>
+    <h4>Recent Media</h4>
+    <img *ngFor="let image of recent_media" src="{{image}}" />
+  </div>
+
+  <div>
+    <h4>Liked Media</h4>
+    <img *ngFor="let image of liked_media" src="{{image}}" />
+  </div>
+</div>
