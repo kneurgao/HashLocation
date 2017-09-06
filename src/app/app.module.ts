@@ -7,7 +7,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {AppComponent} from './app.component';
 
 import {HomeComponent} from './pages/home/home.component';
-import {AuthCodeHandlerComponent} from './pages/auth-code-handler/auth-code-handler.component';
+import {AuthorizationComponent} from './pages/authorization/authorization.component';
 import {ProfileComponent} from './pages/profile/profile.component';
 import {SearchComponent} from './pages/search/search.component';
 
@@ -16,7 +16,7 @@ import {InstagramLoginComponent} from './components/instagram-login/instagram-lo
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
-  {path: 'auth_code', component: AuthCodeHandlerComponent},
+  {path: 'auth_code', component: AuthorizationComponent},
   {path: 'profile', component: ProfileComponent},
   {path: 'search', component: SearchComponent}
 ];
@@ -25,7 +25,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    AuthCodeHandlerComponent,
+    AuthorizationComponent,
     ProfileComponent,
     SearchComponent,
     InstagramLoginComponent

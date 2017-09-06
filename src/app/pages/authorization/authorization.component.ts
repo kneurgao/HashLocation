@@ -4,11 +4,11 @@ import {Router, Routes} from '@angular/router';
 import {Utils} from '../../commons/utils';
 
 @Component({
-  selector: 'app-auth-code-handler',
-  templateUrl: './auth-code-handler.component.html',
-  styleUrls: ['./auth-code-handler.component.css']
+  selector: 'app-authorization',
+  templateUrl: './authorization.component.html',
+  styleUrls: ['./authorization.component.css']
 })
-export class AuthCodeHandlerComponent implements OnInit {
+export class AuthorizationComponent implements OnInit {
 
   CODE_API_URL = 'http://localhost:3000/auth/authorize';
 
