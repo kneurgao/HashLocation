@@ -5,7 +5,7 @@ import {Constants} from '../../commons/constants';
 @Component({
   selector: 'app-instagram-login',
   templateUrl: './instagram-login.component.html',
-  styleUrls: ['./instagram-login.component.css']
+  styleUrls: ['./instagram-login.component.scss']
 })
 export class InstagramLoginComponent implements OnInit {
 
