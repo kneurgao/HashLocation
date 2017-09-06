@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Router, Routes} from '@angular/router';
-import {Utils} from '../commons/utils';
+import {Utils} from '../../commons/utils';
 
 @Component({
   selector: 'app-auth-code-handler',
@@ -29,7 +29,7 @@ export class AuthCodeHandlerComponent implements OnInit {
     this.http.post(this.CODE_API_URL, body, { headers: headers})
       .subscribe(data => {
         console.log('data=' + JSON.stringify(data));
-        this.router.navigate(['/search']);
+        this.router.navigate(['/profile']);
       },
       err => {
         console.log('err=' + JSON.stringify(err));

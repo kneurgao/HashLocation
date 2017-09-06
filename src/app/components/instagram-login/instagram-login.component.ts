@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Http} from '@angular/http';
-import {Constants} from '../commons/constants';
+import {Constants} from '../../commons/constants';
 
 @Component({
   selector: 'app-instagram-login',

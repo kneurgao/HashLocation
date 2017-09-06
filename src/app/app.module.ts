@@ -1,19 +1,23 @@
-import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule, Routes} from '@angular/router';
 import {HttpModule} from '@angular/http';
 import {HttpClientModule} from '@angular/common/http';
 
 import {AppComponent} from './app.component';
-import {HomeComponent} from './home/home.component';
-import {InstagramLoginComponent} from './instagram-login/instagram-login.component';
-import {AuthCodeHandlerComponent} from './auth-code-handler/auth-code-handler.component';
-import {SearchComponent} from './search/search.component';
+
+import {HomeComponent} from './pages/home/home.component';
+import {AuthCodeHandlerComponent} from './pages/auth-code-handler/auth-code-handler.component';
+import {ProfileComponent} from './pages/profile/profile.component';
+import {SearchComponent} from './pages/search/search.component';
+
+import {InstagramLoginComponent} from './components/instagram-login/instagram-login.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'auth_code', component: AuthCodeHandlerComponent},
+  {path: 'profile', component: ProfileComponent},
   {path: 'search', component: SearchComponent}
 ];
 
@@ -21,9 +25,10 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    InstagramLoginComponent,
     AuthCodeHandlerComponent,
-    SearchComponent
+    ProfileComponent,
+    SearchComponent,
+    InstagramLoginComponent
   ],
   imports: [
     BrowserModule,
