@@ -1,0 +1,41 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.media {
+  position:relative;
+  //height: 200px;
+  //width:200px
+  width: 100%;
+  cursor: pointer;
+}
+.media img {
+  width:100%;
+  vertical-align:top;
+}
+.media:after, .media:before {
+  position:absolute;
+  opacity:0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.media:after {
+  content:'\A';
+  width:100%; height:100%;
+  top:0; left:0;
+  background:rgba(0,0,0,0.6);
+}
+.media:before {
+  content: attr(data-overlay-text);
+  width:100%;
+  color:#fff;
+  z-index:1;
+  padding:30px 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align:center;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  vertical-align: middle;
+}
+.media:hover:after, .media:hover:before {
+  opacity:1;
+}

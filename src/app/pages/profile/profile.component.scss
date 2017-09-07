@@ -1,0 +1,37 @@
+@import '../../styles/common.scss';
+
+.row {
+  margin-bottom: 2rem;
+
+  .profile-picture {
+    margin: 0 1rem;
+    box-sizing: border-box;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .user-info {
+    .row {
+      margin-bottom: .75rem;
+    }
+
+    .username {
+      font-size: 32px;
+      font-weight: lighter;
+    }
+
+    .counts {
+      margin-right: 5px;
+      font-weight: bold;
+
+      ::after {
+        content: " ";
+      }
+
+      &:not(:first-child) {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+}
